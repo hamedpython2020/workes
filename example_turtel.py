@@ -63,10 +63,10 @@ x1, y1 = (-10, 10)              #X1#
 x2, y2 = (-1*i, i)              #X2#
 x3, y3 = (110, 10)              #X3#
 x4, y4 = (100+i, i)             #X4#
-x5, y5 = (110, -10)             #X5#
-x6, y6 = (100+i, -1*i)          #X6#
-x7, y7 = (-10, -10)             #X7#
-x8, y8 = (-1*i, -1*i)           #X8#
+x5, y5 = (110, -110)            #X5#
+x6, y6 = (100+i, -100-i)        #X6#
+x7, y7 = (-10, -110)            #X7#
+x8, y8 = (-1*i, -100-i)         #X8#
 d2 = (i+100+i) / 10
 d1 = ((-2*x1) + 100) / 10
 print(x1, y1, x2, y2)
@@ -95,10 +95,11 @@ while n <= 10:
     dx2 += d2
     helper = d2
     pass
-#################Down join######################
+#################Right join######################
 helper, n = (0, 0)
 dy3, dy4 = (0, 0)
 tr.right(90)
+tr.goto(x4, y4)
 while n <= 10:
     n += 1
     if n % 2 != 0:
@@ -109,10 +110,32 @@ while n <= 10:
     else:
         tr.color("purple")
         tr.goto(x4, y4-dy4)
+        o, p = tr.position()
+        if o == x6 and p == y6:
+            break
         tr.fd(d2)
         pass
     tr.color("white")
     dy3 += d1
     dy4 += d2
-
     pass
+#################Down join######################
+helper, n = (0, 0)
+dx5, dx6 = (0, 0)
+tr.right(90)
+tr.goto(x6, y6)
+while n <= 10:
+    n += 1
+    if n % 2 != 0:
+        tr.fd(helper)
+        tr.color("blue")
+        tr.goto(x5-dx5, y5)
+    else:
+        tr.fd(d1)
+        tr.color("purple")
+        tr.goto(x6 - dx6, y6)
+        pass
+    tr.color("white")
+    dx5 += d1
+    dx6 += d2
+    helper = d2
