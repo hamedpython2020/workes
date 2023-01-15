@@ -35,6 +35,7 @@ import turtle as tr
 
 
 def pipe(limit, q, s):
+    i = 0
     tr.speed(s)
     while True:
         if i >= limit:
