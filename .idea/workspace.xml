@@ -228,7 +228,7 @@
       <workItem from="1673624662239" duration="2637000" />
       <workItem from="1673709830976" duration="1130000" />
       <workItem from="1673720549560" duration="7528000" />
-      <workItem from="1673802893852" duration="7084000" />
+      <workItem from="1673802893852" duration="7917000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1673811929340</created>
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673814821132</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".">
+      <created>1673816241221</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673816241221</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +304,7 @@
     <SUITE FILE_PATH="coverage/my_python_projects$detector_face.coverage" NAME="detector_face Coverage Results" MODIFIED="1673557656922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/workes$python_runer.coverage" NAME="python runer Coverage Results" MODIFIED="1661784107277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/my_python_projects$wether_app.coverage" NAME="wether_app Coverage Results" MODIFIED="1673622671829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wether_app_finder" />
-    <SUITE FILE_PATH="coverage/my_python_projects$example_turtel.coverage" NAME="example_turtel Coverage Results" MODIFIED="1673815774022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_python_projects$example_turtel.coverage" NAME="example_turtel Coverage Results" MODIFIED="1673816577824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/workes$AudioBook.coverage" NAME="AudioBook Coverage Results" MODIFIED="1662321680107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/workes$calender.coverage" NAME="calender Coverage Results" MODIFIED="1662285380511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/workes$speech_recognise.coverage" NAME="speech_recognise Coverage Results" MODIFIED="1662384022105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
