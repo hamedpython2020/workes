@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41f68f3f-b297-447f-9a6e-8ef88b71aa06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AudioBook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Sessions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prime number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calender.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cameracode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detector_face.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_turtel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/good.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lsit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/make tabel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_works" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/printer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pygame_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quize 1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quize 2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/revers word.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sketch_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speech_recognise.py" afterDir="false" />
+    <list default="true" id="41f68f3f-b297-447f-9a6e-8ef88b71aa06" name="Default Changelist" comment="..">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_turtel.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_turtel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +43,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql&#10;sqlite" />
     <property name="RunConfigurationTargetLRU" value="87e85dae-57cb-410f-9584-76e23863ce88" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
@@ -80,7 +64,7 @@
       <recent name="G:\python\workes\wether_app_finder\" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.AudioBook">
+  <component name="RunManager" selected="Python.example_turtel">
     <configuration name="AudioBook" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,9 +110,6 @@
       <module name="my python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -206,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.example_turtel" />
         <item itemvalue="Python.AudioBook" />
         <item itemvalue="Python.speech_recognise" />
         <item itemvalue="Python.pygame_test" />
         <item itemvalue="Python.wether_app" />
-        <item itemvalue="Python.example_turtel" />
       </list>
     </recent_temporary>
   </component>
@@ -241,8 +222,23 @@
       <workItem from="1673624662239" duration="2637000" />
       <workItem from="1673709830976" duration="1130000" />
       <workItem from="1673720549560" duration="7528000" />
-      <workItem from="1673802893852" duration="3031000" />
+      <workItem from="1673802893852" duration="4262000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1673811929340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673811929340</updated>
+    </task>
+    <task id="LOCAL-00002" summary="..">
+      <created>1673811959763</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673811959763</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +254,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
