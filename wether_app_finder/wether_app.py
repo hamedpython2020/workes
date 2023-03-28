@@ -68,7 +68,7 @@ root.geometry("900x500+300+200")
 root.resizable(False, False)
 ##########################################
                          #########Search_Box
-search_image = tk.PhotoImage(file="search.png")
+search_image = tk.PhotoImage(file="/search.png")
 search_image_label = tk.Label(root, image=search_image)
 search_image_label.pack(pady=20, side=tk.TOP)
 textfield = tk.Entry(root, justify="center", width=17, font=("poppins", 25, "bold"), bg="#404040", fg="white", border=0)
