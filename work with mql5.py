@@ -243,13 +243,13 @@ def send_order(symbol, lot, buy, sell, id_position=None, comment=" No specific c
 
 #### we open order #############
 
-information = send_order("EURUSD.s", 0.01, True, False)
+# information = send_order("EURUSD.s", 0.01, True, False)
 
 # print(information)
 
 ### close last order (order that open on line 244) ##########
 
-close_order = send_order("EURUSD.s", 0.01, True, False, id_position=information.order)
+# close_order = send_order("EURUSD.s", 0.01, True, False, id_position=information.order)
 
 # print('\t\n\n', close_order)
 
@@ -420,6 +420,124 @@ def position_size(capital, symbol):
         print("Invested capital is too small to be able to place an order")
         
     pass
-
     
-position_size(0.02,'US30.s')    
+# position_size(25,'US30.s')    
+
+
+########## we want to use sell limite or buy limit #######
+
+### we just chaneg our requset ######
+
+mt5.initialize()
+
+symbol = 'US30.s'
+
+filling_type  = mt5.symbol_info(symbol).filling_mode
+
+point = mt5.symbol_info(symbol).point
+
+####    Sell limit #####
+request = {
+    "action": mt5.TRADE_ACTION_PENDING,
+    "symbol": symbol,
+    "volume": 1.0,
+    "type": mt5.ORDER_TYPE_BUY_LIMIT,
+    "price": mt5.symbol_info_tick(symbol).bid-100*point,
+    "type_filling": filling_type,
+    "type_time": mt5.ORDER_TIME_GTC,
+}
+
+# order = mt5.order_check(request)
+
+# print(order,'\n\t')
+
+# order = mt5.order_send(request)
+
+# print(order,'\n\t')
+
+# REMOVE PENDING ORDER ####
+
+# request = {
+    #  "action" : mt5.TRADE_ACTION_REMOVE ,
+    #  "order" : order.order ,
+# }
+
+# mt5.order_send(request)
+
+
+#### Buy limit #####
+
+###
+# we just change sell request to buy request
+###
+
+#### change SL\TP 1. we open a deal  -- 2. change sl or tp ######
+request = {
+    "action": mt5.TRADE_ACTION_DEAL,
+    "symbol": symbol,
+    "volume": 0.01,
+    "type": mt5.ORDER_TYPE_BUY,
+    "price": mt5.symbol_info_tick(symbol).ask,
+    "deviation": deviation,
+    "sl": mt5.symbol_info_tick(symbol).ask-100*point,
+    "tp": mt5.symbol_info_tick(symbol).ask+100*point,
+    "type_filling": filling_type,
+    "type_time": mt5.ORDER_TIME_GTC,
+}
+
+info_order = mt5.order_send(request)
+
+# print(info_order,'\n')
+
+### change our sl or tp ####
+request = {
+    "action": mt5.TRADE_ACTION_SLTP,
+    "symbol": symbol,
+    "position": 5138403,
+    "volume": 0.1,
+    "type": mt5.ORDER_TYPE_SELL,
+    "price": 1.10508,
+    "deviation": 10,
+    "sl": mt5.symbol_info_tick(symbol).ask+1000*point,
+    "tp": mt5.symbol_info_tick(symbol).ask-1000*point,
+    "type_filling": filling_type,
+    "type_time": mt5.ORDER_TIME_GTC,
+}
+
+order = mt5.order_send(request)
+
+# print(order,'\n')
+
+### advance mony managment and make table with or trade ######
+def resume():
+    """ Return the current positions. Position=0 --> Buy """    
+    # Define the name of the columns that we will create
+    columns = ["ticket", "position", "symbol", "volume", "magic", "profit", "price", "tp", "sl","trade_size"]
+
+    # Go take the current open trades
+    list_current = mt5.positions_get()
+
+    # Create a empty dataframe
+    summary = pd.DataFrame()
+
+    # Loop to add each row in dataframe
+    for element in list_current:
+        element_pandas = pd.DataFrame([element.ticket, element.type, element.symbol, element.volume, element.magic,
+                                       element.profit, element.price_open, element.tp,
+                                       element.sl, mt5.symbol_info(element.symbol).trade_contract_size],
+                                      index=columns).transpose()
+        summary = pd.concat((summary, element_pandas), axis=0)
+    
+    try:
+        summary["profit %"] = summary.profit / (summary.price * summary.trade_size * summary.volume)
+        summary = summary.reset_index(drop=True)
+    except:
+        pass
+    return print(summary)
+
+# resume()
+
+# position_size(20,'US30.s')
+
+
+send_order(buy=True,sell=False, symbol='US30.s', lot=0.01, )
