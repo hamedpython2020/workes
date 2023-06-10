@@ -1,6 +1,9 @@
+import turtle , numpy as np
+
+t = turtle.Turtle()
 
 
-w = 0.8
+w = 0.8 
 #float(input('---\t w\t---'))
 a =  0.5
 #float(input('---\t a\t---'))
@@ -96,4 +99,28 @@ def M_M(x) :
 
 print(M_M(8),'\n',P_M(4),'\n',q1q2_M(5))
 
-print(M_M(8) + P_M(4) + q1q2_M(5))
+def sum(x):
+    sum_M = M_M(8) + P_M(4) + q1q2_M(5)
+    return sum_M
+
+print(sum(4))
+
+################# force function complete
+
+###### draw diagram 
+t.pencolor('white')
+t.speed(10)
+t.backward(l*5)
+
+for i in np.arange(0,10*l,1):
+    if sum(i) < 0 :
+        t.pencolor('red')
+    else:
+        t.pencolor('green')
+    t.pencolor('white')
+    t.goto(i,sum(i))
+    t.pen(pencolor='black', pensize=3)
+    t.goto(i,0)
+    t.pencolor('white')
+
+    
