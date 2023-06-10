@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68f3f-b297-447f-9a6e-8ef88b71aa06" name="Default Changelist" comment=".">
+      <change afterPath="$PROJECT_DIR$/project analyze.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wether_app_finder/wether_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/wether_app_finder/wether_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work with mql5.py" beforeDir="false" afterPath="$PROJECT_DIR$/work with mql5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <recent name="G:\python\workes\wether_app_finder\" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.wether_app">
+  <component name="RunManager" selected="Python.project analyze">
     <configuration name="AudioBook" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,6 +97,9 @@
       <module name="my python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -157,20 +159,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="speech_recognise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="project analyze" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speech_recognise.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project analyze.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,6 +182,9 @@
       <module name="my python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wether_app_finder" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -200,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.project analyze" />
+        <item itemvalue="Python.project analyze" />
         <item itemvalue="Python.wether_app" />
         <item itemvalue="Python.Progress_bar" />
         <item itemvalue="Python.example_turtel" />
-        <item itemvalue="Python.AudioBook" />
-        <item itemvalue="Python.speech_recognise" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +243,9 @@
       <workItem from="1676473502323" duration="13000" />
       <workItem from="1676473523712" duration="16000" />
       <workItem from="1680453475857" duration="255000" />
+      <workItem from="1681156535817" duration="5000" />
+      <workItem from="1681722111716" duration="225000" />
+      <workItem from="1685039037716" duration="3405000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1673811929340</created>
