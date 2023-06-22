@@ -2,6 +2,7 @@ import turtle , numpy as np
 
 t = turtle.Turtle()
 
+s = turtle.Screen()
 
 w = 0.8 
 #float(input('---\t w\t---'))
@@ -112,15 +113,12 @@ t.pencolor('white')
 t.speed(10)
 t.backward(l*5)
 
-for i in np.arange(0,10*l,1):
+for i in np.arange(0,l,0.1):
     if sum(i) < 0 :
         t.pencolor('red')
     else:
-        t.pencolor('green')
-    t.pencolor('white')
+        t.pencolor('orange')
     t.goto(i,sum(i))
-    t.pen(pencolor='black', pensize=3)
-    t.goto(i,0)
-    t.pencolor('white')
 
-    
+s= s.mainloop()
+   
