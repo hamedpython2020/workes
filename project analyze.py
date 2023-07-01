@@ -104,51 +104,47 @@ print(sum(4))
 
 ################# force function complete
 def mo ():
-    dx = l/(3*l)
-    mylist = []
+    dx = 1/3
     zigma_y = 0
     nn = int(l/dx)
     print(nn,dx,l)
-    for i in range(1,nn):
-        mylist.append(sum(i*dx))
+    for i in range(1, nn):
         zigma_y += sum(i*dx)
         pass
     zigma_y += sum(0)/2
     zigma_y += sum(l)/2
     A = zigma_y * dx
-    print(zigma_y)
     xia = []
     Aibar = []
     for i in range(1,nn):
-        if sum(i) > sum(i-1):
-            pp = (dx*(3*abs(sum(i))+abs(sum(i-1)))/(6))/(abs(sum(i))+abs(sum(i-1))/2)
-            xibar = (abs(sum(i-1))*dx)+pp
+        if sum(i*dx) > sum((i-1)*dx):
+            p1 = ((3*abs(sum(i*dx)))+abs(sum((i-1)*dx)))/6
+            p2 = abs(sum(i*dx)) + (abs(sum((i-1)*dx))/2)
+            pp = round((dx*p1)/p2, 3)
+            xibar = ((i-1)*(round(dx,2)))+pp
             xia.append(round(xibar,2))
-            Aibar.append(round(dx*(abs(sum(i))+abs(sum(i-1))/2),2))
+            p1 = (abs(sum(i*dx))+abs(sum((i-1)*dx)))/2
+            Aibar.append(round((dx*p1), 2))
         else:
-            pp = (2*dx*(3*abs(sum(i))+abs(sum(i-1))*2)/(6))/(abs(sum(i))+abs(sum(i-1))/2)
-            xibar = (abs(sum(i-1))*dx)+pp
+            p1 = ((3 * abs(sum(i*dx))) + (2 * abs(sum((i-1)*dx)))) / 6
+            p2 = abs(sum(i*dx)) + (abs(sum((i-1)*dx)) / 2)
+            pp = round((2 * dx * p1) / p2, 3)
+            xibar = ((i-1)*dx)+pp
             xia.append(round(xibar,2))
-            Aibar.append(round(dx*(abs(sum(i))+abs(sum(i-1))/2),2))
+            p1 = (abs(sum(i * dx)) + abs(sum((i - 1) * dx))) / 2
+            Aibar.append(round((dx * p1), 2))
         pass
-    print(xia)
-    xtbar = 0
+    up = 0
     Atbar = 0
     for i in range(0,len(xia)):
-        xtbar += xia[i]
-        print(xtbar)
+        up += xia[i] * Aibar[i]
     for j in range(0,len(Aibar)):
         Atbar += Aibar[j]
-    xbar = xtbar/Atbar
+    xbar = up/Atbar
 
     Moa = xbar * A
     Mob = (l-xbar)*A
     return Moa, Mob
-# print(Mob,Moa)
-print(mo())
-
-
-
 
 MM = list(mo())
 print(MM)
@@ -158,3 +154,4 @@ FEM_AB = (2/l**2)*(MA-2*MB)
 FEM_BA = (2/l**2)*(2*MA-MB)
 print(FEM_AB)
 print(FEM_BA)
+
