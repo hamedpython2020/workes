@@ -1,4 +1,3 @@
-import turtle , numpy as np
 
 w = 0.8 
 #float(input('---\t w\t---'))
