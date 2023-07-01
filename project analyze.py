@@ -1,9 +1,5 @@
 import turtle , numpy as np
 
-t = turtle.Turtle()
-
-s = turtle.Screen()
-
 w = 0.8 
 #float(input('---\t w\t---'))
 a =  0.5
@@ -101,24 +97,64 @@ def M_M(x) :
 print(M_M(8),'\n',P_M(4),'\n',q1q2_M(5))
 
 def sum(x):
-    sum_M = M_M(8) + P_M(4) + q1q2_M(5)
+    sum_M = M_M(x) + P_M(x) + q1q2_M(x)
     return sum_M
 
 print(sum(4))
 
 ################# force function complete
+def mo ():
+    dx = l/(3*l)
+    mylist = []
+    zigma_y = 0
+    nn = int(l/dx)
+    print(nn,dx,l)
+    for i in range(1,nn):
+        mylist.append(sum(i*dx))
+        zigma_y += sum(i*dx)
+        pass
+    zigma_y += sum(0)/2
+    zigma_y += sum(l)/2
+    A = zigma_y * dx
+    print(zigma_y)
+    xia = []
+    Aibar = []
+    for i in range(1,nn):
+        if sum(i) > sum(i-1):
+            pp = (dx*(3*abs(sum(i))+abs(sum(i-1)))/(6))/(abs(sum(i))+abs(sum(i-1))/2)
+            xibar = (abs(sum(i-1))*dx)+pp
+            xia.append(round(xibar,2))
+            Aibar.append(round(dx*(abs(sum(i))+abs(sum(i-1))/2),2))
+        else:
+            pp = (2*dx*(3*abs(sum(i))+abs(sum(i-1))*2)/(6))/(abs(sum(i))+abs(sum(i-1))/2)
+            xibar = (abs(sum(i-1))*dx)+pp
+            xia.append(round(xibar,2))
+            Aibar.append(round(dx*(abs(sum(i))+abs(sum(i-1))/2),2))
+        pass
+    print(xia)
+    xtbar = 0
+    Atbar = 0
+    for i in range(0,len(xia)):
+        xtbar += xia[i]
+        print(xtbar)
+    for j in range(0,len(Aibar)):
+        Atbar += Aibar[j]
+    xbar = xtbar/Atbar
 
-###### draw diagram 
-t.pencolor('white')
-t.speed(10)
-t.backward(l*5)
+    Moa = xbar * A
+    Mob = (l-xbar)*A
+    return Moa, Mob
+# print(Mob,Moa)
+print(mo())
 
-for i in np.arange(0,l,0.1):
-    if sum(i) < 0 :
-        t.pencolor('red')
-    else:
-        t.pencolor('orange')
-    t.goto(i,sum(i))
 
-s= s.mainloop()
-   
+
+
+MM = list(mo())
+print(MM)
+MA = round(MM[0], 6)
+MB = round(MM[1], 6)
+FEM_AB = (2/l**2)*(MA-2*MB)
+FEM_BA = (2/l**2)*(2*MA-MB)
+print(FEM_AB)
+print(FEM_BA)
