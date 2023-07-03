@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f68f3f-b297-447f-9a6e-8ef88b71aa06" name="Default Changelist" comment=".">
+      <change afterPath="$PROJECT_DIR$/project_photo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/project analyze.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,9 +163,6 @@
       <module name="my python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -252,6 +249,7 @@
       <workItem from="1688228577866" duration="9266000" />
       <workItem from="1688336557627" duration="4701000" />
       <workItem from="1688375689541" duration="8519000" />
+      <workItem from="1688415364681" duration="3270000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1673811929340</created>
@@ -330,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688248600942</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=".">
+      <created>1688415403250</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688415403250</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
